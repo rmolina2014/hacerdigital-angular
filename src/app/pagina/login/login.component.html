@@ -1,28 +1,28 @@
 <div class="container-fluid">
-<div class="row">
-                    <div class="col-12">
-                        <div class="card card-body">
-                            <h4 class="card-title">Forms Login</h4>
-                           
-                            <form class="form-horizontal mt-4">
-                                
-                                <div class="form-group">
-                                    <label for="example-email">Email <span class="help"> e.g.
-                                            "example@gmail.com"</span></label>
-                                    <input type="email" id="example-email" name="example-email" class="form-control"
-                                        placeholder="Email">
-                                </div>
-                                <div class="form-group">
-                                    <label>Password</label>
-                                    <input type="password" class="form-control" value="password">
-                                </div>
-                               
-                                <div class="form-group">
-                                
-                                </div>
-                            </form>
-                        </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="card card-body">
+                <h4 class="card-title">Formulario de Login</h4>
+
+                <form class="form-horizontal mt-4">
+
+                    <div class="form-group">
+                        <label for="example-email">Email <span class="help"> e.g.
+                                "example@gmail.com"</span></label>
+                        <input type="email" id="example-email" name="example-email" class="form-control"
+                            placeholder="Email" [ngModel]="usuario.email">
                     </div>
-                </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" class="form-control" value="password" [ngModel]="usuario.password">
+                    </div>
+
+                    <div class="form-group">
+                        <button class="btn btn-primary" (click)="Ingresar()">Validar</button>
+
+                    </div>
+                </form>
             </div>
-           
+        </div>
+    </div>
+</div>
